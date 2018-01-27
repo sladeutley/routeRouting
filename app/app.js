@@ -6,7 +6,7 @@ angular.module("funWithRoutes", ["ngRoute"])
 .config($routeProvider => {
     $routeProvider
         .when("/", {
-            templateUrl: "partials/guides.html",
+            templateUrl: "partials/routes.html",
             controller: "RoutesCtrl"
         })
         .otherwise('/');

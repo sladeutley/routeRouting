@@ -1,20 +1,20 @@
 'use strict';
 
-// angular
-//   .module("funWithGuides")
-//   .factory("GuidesFactory", function($q, $http) {
-//     let getGuides = () => {
-//       return $q((resolve, reject) => {
-//         $http
-//           .get("../data/guides.json")
-//           .then(guides => {
-//             resolve(guides);
-//           })
-//           .catch(err => {
-//             reject(err);
-//           });
-//       });
-//     };
+angular
+  .module("funWithRoutes")
+  .factory("RoutesFactory", function($q, $http) {
+    let getRoutes = () => {
+      return $q((resolve, reject) => {
+        $http
+          .get("../data/guides.json")
+          .then(routes => {
+            resolve(routes);
+          })
+          .catch(err => {
+            reject(err);
+          });
+      });
+    };
 
-//     return { getGuides };
-//   });
+    return { getRoutes };
+  });

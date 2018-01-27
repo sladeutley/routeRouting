@@ -1,9 +1,9 @@
 'use strict';
 
-// angular.module("funWithGuides").controller("GuidesCtrl", function($scope, GuidesFactory) {
-//     GuidesFactory.getGuides()
-//     .then( (guidesData) => {
-//         console.log('guidesData',guidesData);
-//         $scope.guidesList = guidesData.data.guides;
-//     });
-// });
+angular.module("funWithRoutes").controller("RoutesCtrl", function($scope, RoutesFactory) {
+    RoutesFactory.getRoutes()
+    .then( (routesData) => {
+        console.log('routesData',routesData);
+        $scope.routes = routesData.data.routes;
+    });
+});
