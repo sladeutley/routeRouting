@@ -6,7 +6,7 @@ angular
     let getRoutes = () => {
       return $q((resolve, reject) => {
         $http
-          .get("../data/guides.json")
+          .get("../data/highways.json")
           .then(routes => {
             resolve(routes);
           })
